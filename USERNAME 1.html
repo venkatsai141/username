@@ -1,0 +1,64 @@
+
+<html>
+<head>
+<title>Login Page</title>
+</head>
+<body>
+<div class="title1">
+<form name="loginForm" method="get" action="teacherinput.html" onclick="return check(this.form)">
+<table width="20%" bgcolor="orange" align="center">
+
+<tr>
+<td colspan=2><center><font size=8><b>TEACHER LOGIN</b></font></center></td>
+</tr>
+
+<tr>
+<td><a style="color : black"> USERNAME </a></strong></td>
+<td><input type="text" size=45 name="userid"></td>
+</tr>
+
+<tr>
+<td>PASSWORD:</td>
+<td><input type="password" size=45 name="pwd"></td>
+</tr>
+
+<tr>
+<td ><input name="reset" type="Reset"></td>
+<td><input type="Submit" id="login" onclick="return check(this.form)"></td>
+</tr>
+
+</table>
+<script ></script>
+</script>
+</form>
+</div>
+<style>
+.title1{
+  margin-top: 250px;
+  margin-left :200px;
+  margin-right :100px;
+}
+body{ background-image:
+	  url('f4993163a1654e1082b9ca77a38e271a.jpg');
+	  background-repeat: no-repeat;
+	  background-size: 100% 100%;
+}
+</style>
+<script language="javascript">
+function check(form)
+{
+if((form.userid.value == "venkat" && form.pwd.value == "2451-21-733-088") || (form.userid.value == "varun" && form.pwd.value == "2451-21-733-086")||(form.userid.value == "vignesh" && form.pwd.value == "2451-21-733-073"))
+{
+	return true;
+}
+else
+{
+	alert("Error Password or Username")
+	document.loginForm.pwd.focus();
+	return false;
+}
+}
+</script>
+
+</body>
+</html>
